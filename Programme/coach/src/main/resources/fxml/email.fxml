@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmailController">
+   <Pane layoutY="-1.0" prefHeight="557.0" prefWidth="213.0" style="-fx-background-color: #134278; -fx-background-radius: 0 60 0 0;">
+      <ImageView fitHeight="118.0" fitWidth="168.0" layoutX="15.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../images/attachment_88415434.jpg" />
+      </ImageView>
+      <Button alignment="BOTTOM_CENTER" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#returnToClientPageHandlerEvent" prefHeight="118.0" prefWidth="190.0" style="-fx-background-color: #134278;" text="Return to the client page" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="75.0" fitWidth="76.0" layoutX="59.0" layoutY="252.0" onMouseClicked="#returnToClientPageHandlerEvent" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../images/client white.png" />
+      </ImageView>
+   </Pane>
+   <TextField fx:id="mailField" layoutX="276.0" layoutY="167.0" onKeyReleased="#mailFieldHandler" prefHeight="330.0" prefWidth="611.0" style="-fx-border-color: #134278;" />
+   <Label layoutX="292.0" layoutY="71.0" text="Email send to" textFill="#134278">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="emailClient" layoutX="433.0" layoutY="71.0" prefHeight="26.0" prefWidth="413.0" textFill="#134278">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="541.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#sendButtHandler" prefHeight="39.0" prefWidth="118.0" style="-fx-background-color: #134278; -fx-background-radius: 00 60 00;" text="Send" textFill="WHITE">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Label fx:id="errorLabel" layoutX="298.0" layoutY="131.0" prefHeight="18.0" prefWidth="386.0" />
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddActivitiesProgramsController">
+   <Pane prefHeight="557.0" prefWidth="213.0" style="-fx-background-color: #134278; -fx-background-radius: 0 60 0 0;">
+      <ImageView fitHeight="118.0" fitWidth="168.0" layoutX="15.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../images/attachment_88415434.jpg" />
+      </ImageView>
+      <Button alignment="BOTTOM_CENTER" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#returnToProgramPageHandlerEvent" prefHeight="118.0" prefWidth="190.0" style="-fx-background-color: #134278;" text="Return to the program page" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="75.0" fitWidth="76.0" layoutX="59.0" layoutY="252.0" onMouseClicked="#returnToProgramPageHandlerEvent" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../images/programme%20blanc.png" />
+      </ImageView>
+   </Pane>
+   <Line endX="573.0" layoutX="336.0" layoutY="79.0" startX="-100.0" stroke="#2092ea" />
+   <Label layoutX="236.0" layoutY="37.0" prefHeight="34.0" prefWidth="320.0" text="Add an activity to a program" textFill="#134278">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Button layoutX="666.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#addActivitiesProgramHandlerEvent" prefHeight="25.0" prefWidth="201.0" style="-fx-background-color: #2092EA; -fx-background-radius: 0 60 00;" text="Add">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button layoutX="304.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#cancelProgramHandlerEvent" prefHeight="25.0" prefWidth="201.0" style="-fx-background-color: #2092EA; -fx-background-radius: 0 60 00;" text="Cancel">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Label fx:id="error" layoutX="449.0" layoutY="297.0" prefHeight="18.0" prefWidth="329.0" />
+   <ComboBox fx:id="comboBoxActivity" layoutX="410.0" layoutY="215.0" prefWidth="190.0" />
+   <TextField fx:id="quantityTextField" layoutX="618.0" layoutY="215.0" onKeyReleased="#quantityTextFieldHandlerEvent" prefHeight="26.0" prefWidth="75.0" />
+   <TextField fx:id="repetitionTextField" layoutX="711.0" layoutY="215.0" onKeyReleased="#repetitionTextFieldHandlerEvent" prefHeight="26.0" prefWidth="75.0" />
+   <Label layoutX="626.0" layoutY="189.0" text="Quantity" textFill="#134278">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="711.0" layoutY="189.0" text="Repetition" textFill="#134278">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="restTextField" layoutX="792.0" layoutY="215.0" onKeyPressed="#restTextFieldHandlerEvent" onKeyReleased="#restTextFieldHandlerEvent" prefHeight="26.0" prefWidth="94.0" />
+   <Label layoutX="793.0" layoutY="189.0" text="Rest" textFill="#134278">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="894.0" layoutY="215.0" text="(en s)" textFill="#134278">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+</AnchorPane>

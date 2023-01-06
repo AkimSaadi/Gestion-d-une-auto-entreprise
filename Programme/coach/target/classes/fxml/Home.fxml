@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="826.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <Pane prefHeight="200.0" prefWidth="1156.0" style="-fx-background-color: #134278; -fx-background-radius: 0 60 00;">
+      <ImageView fitHeight="150.0" fitWidth="311.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../images/attachment_88415434.jpg" />
+      </ImageView>
+      <Label layoutX="273.0" layoutY="42.0" prefHeight="109.0" prefWidth="664.0" text="    Welcome to the main page " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="41.0" />
+         </font>
+      </Label>
+   </Pane>
+   <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="272.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#clientsHandler" prefHeight="119.0" prefWidth="192.0" style="-fx-background-color: #F5F5F5;" text="Clients" textFill="#134278">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Button>
+   <Button alignment="BOTTOM_CENTER" layoutX="283.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#planningHandlerEvent" prefHeight="134.0" prefWidth="171.0" style="-fx-background-color: #F5F5F5;" text="Planning" textFill="#134278">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Button>
+   <Button alignment="BOTTOM_CENTER" layoutX="283.0" layoutY="601.0" mnemonicParsing="false" onMouseClicked="#programmesHandlerEvent" prefHeight="141.0" prefWidth="192.0" style="-fx-background-color: #F5F5F5;" text="Programs" textFill="#134278">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Button>
+   <ImageView fitHeight="84.0" fitWidth="87.0" layoutX="325.0" layoutY="252.0" onMouseClicked="#clientsHandler" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/client.png" />
+   </ImageView>
+   <ImageView fitHeight="92.0" fitWidth="88.0" layoutX="325.0" layoutY="392.0" onMouseClicked="#planningHandlerEvent" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/planning.png" />
+   </ImageView>
+   <ImageView fitHeight="109.0" fitWidth="100.0" layoutX="318.0" layoutY="592.0" onMouseClicked="#programmesHandlerEvent" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/programme.png" />
+   </ImageView>
+   <Button alignment="BOTTOM_CENTER" layoutX="746.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#activitiesHandlerEvent" prefHeight="119.0" prefWidth="160.0" style="-fx-background-color: #F5F5F5;" text="Activities" textFill="#134278">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Button>
+   <Button alignment="BOTTOM_CENTER" layoutX="741.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#statisticsHandlerEvent" prefHeight="134.0" prefWidth="171.0" style="-fx-background-color: #F5F5F5;" text="Statistics" textFill="#134278">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Button>
+   <ImageView fitHeight="82.0" fitWidth="150.0" layoutX="785.0" layoutY="250.0" onMouseClicked="#activitiesHandlerEvent" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/activity.png" />
+   </ImageView>
+   <ImageView fitHeight="92.0" fitWidth="160.0" layoutX="780.0" layoutY="405.0" onMouseClicked="#statisticsHandlerEvent" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/stat.png" />
+   </ImageView>
+   <Line endX="-18.0" endY="459.0" layoutX="602.0" layoutY="281.0" startX="-18.0" startY="-53.0" stroke="#2093e5" />
+</AnchorPane>

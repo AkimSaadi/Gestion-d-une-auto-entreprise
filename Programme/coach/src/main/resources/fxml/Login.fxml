@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0"
+            prefWidth="1183.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <AnchorPane prefHeight="761.0" prefWidth="589.0"
+               style="-fx-background-color: #134278; -fx-background-radius: 0 60 00;" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0">
+      <ImageView fitHeight="120.0" fitWidth="152.0" layoutX="227.0" layoutY="261.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../images/attachment_88415434.jpg"/>
+      </ImageView>
+      <Label layoutX="175.0" layoutY="416.0" prefHeight="35.0" prefWidth="275.0"
+             text="Coaching is much easier with us" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0"/>
+         </font>
+      </Label>
+   </AnchorPane>
+   <TextField fx:id="userName" layoutX="735.0" layoutY="177.0" onKeyReleased="#usernameHandler" prefHeight="27.0"
+              prefWidth="287.0" promptText="Enter your username"
+              style="-fx-background-color: #134278; -fx-background-radius: 0 60 00; -fx-text-fill: #ffffff;">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </TextField>
+   <PasswordField fx:id="password" layoutX="735.0" layoutY="242.0" onKeyReleased="#passwordHandler" prefHeight="27.0"
+                  prefWidth="287.0" promptText="Enter your password"
+                  style="-fx-background-color: #134278; -fx-background-radius: 0 60 00; -fx-text-fill: #ffffff;">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </PasswordField>
+   <Button fx:id="loginButt" layoutX="902.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#loginHandler"
+           prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #2092EA; -fx-background-radius: 0 60 00;"
+           text="Login">
+      <font>
+         <Font name="System Italic" size="18.0"/>
+      </font>
+   </Button>
+   <Label fx:id="error" layoutX="774.0" layoutY="356.0" prefHeight="17.0" prefWidth="188.0" textFill="#158ce1">
+      <font>
+         <Font size="10.0"/>
+      </font>
+   </Label>
+   <Button layoutX="735.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#signInHandler"
+           prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #2092EA; -fx-background-radius: 0 60 00;"
+           text="Sign In">
+      <font>
+         <Font name="System Italic" size="18.0"/>
+      </font>
+   </Button>
+</AnchorPane>
